@@ -1,0 +1,35 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper{
+  width: 1020px;
+  margin: auto;
+  .navbar{
+    overflow: hidden;
+    height: 60px;
+    .name{
+      float: left;
+      margin-top: 20px;
+    }
+    .right-side{
+      float: right;
+      .social-buttons{
+        margin-top: -15px;
+        display: inline-block;
+        .work{
+          float: right;
+          margin-top: 30px;
+        }
+        img{
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+  .brief-description{
+    .background-image{
+      background: url("background-pane-1.jpeg");
+      height: 800px;
+    }
+  }
+}
