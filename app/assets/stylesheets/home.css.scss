@@ -18,7 +18,15 @@
         display: inline-block;
         .work{
           float: right;
-          margin-top: 30px;
+          margin-top: 25px;
+          width: 200px;
+          height: 26px;
+          border-radius: 5px;
+          background-color: #F8937B;
+          color: white;
+          text-align: center;
+          padding-top: 6px;
+          letter-spacing: 1px;
         }
         img{
           margin-left: -20px;
@@ -29,7 +37,140 @@
   .brief-description{
     .background-image{
       background: url("background-pane-1.jpeg");
-      height: 800px;
+      height: 600px;
+      .description{
+        padding-top: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        .text{
+          border: 1px solid white;
+          border-radius: 5px;
+          padding: 25px;
+          color: white;
+          float: left;
+          .left{
+            float: left;
+            width: 400px;
+            margin-top: 50px;
+            p{
+              line-height: 25px;
+            }
+            .see-my-work{
+              font-size: 20px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            }
+          }
+          .right{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+  .project{
+    .wrapper{
+      padding-top: 80px;
+      padding-left: 80px;
+      padding-right: 80px;
+      .information{
+        float: left;
+        padding: 25px;
+        .desc{
+          width: 300px;
+          margin-left: 50px;
+          color: white;
+          padding-top: 30px;
+        }
+        img{
+          width: 450px;
+          border-radius: 10px;
+        }
+        .left{
+          float: left;
+        }
+        .right{
+          float: right;
+          .headline{
+            font-size: 24px;
+          }
+        }
+        .no-margin{
+          margin-left: 0px;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  .lumoid{
+    .background-image{
+      background: url("bg_project_1.png");
+      height: 500px;
+    }
+  }
+  .letote{
+    .background-image{
+      background: url("bg_project_2.png");
+      height: 500px;
+    }
+  }
+  .activities{
+    margin-top: 50px;
+    height: 300px;
+    .headline{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 21px;
+      letter-spacing: 1px;
+      color: #677887;
+    }
+    .activity-list{
+      margin: auto;
+      margin-top: 30px;
+      li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 40px;
+        img{
+          width: 120px;
+        }
+        .title{
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .get-in-touch{
+    height: 400px;
+    background-color: #F8937B;
+    color: white;
+    .wrapper{
+      padding-top: 100px;
+      .headline{
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 20px;
+      }
+      .footer-links{
+        width: 225px;
+        margin: auto;
+        margin-top: 20px;
+        li{
+          list-style-type: none;
+          display: inline-block;
+          padding: 15px;
+          img{
+            width: 30px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    .copyright{
+      text-align: center;
+      margin-top: 120px;
     }
   }
 }
