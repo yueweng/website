@@ -4,6 +4,7 @@
 .wrapper{
   width: 1020px;
   margin: auto;
+  font-family: "Source Code Pro";
   .navbar{
     overflow: hidden;
     height: 60px;
@@ -26,10 +27,10 @@
           color: white;
           text-align: center;
           padding-top: 6px;
-          letter-spacing: 1px;
+          font-size: 15px;
         }
         img{
-          margin-left: -20px;
+          margin-left: -30px;
         }
       }
     }
@@ -56,9 +57,10 @@
               line-height: 25px;
             }
             .see-my-work{
-              font-size: 20px;
+              font-size: 17px;
               text-transform: uppercase;
-              letter-spacing: 1px;
+              letter-spacing: 3px;
+              font-family: "Permanent Marker";
             }
           }
           .right{
@@ -86,13 +88,23 @@
           width: 450px;
           border-radius: 10px;
         }
+        .what-i-did{
+          text-transform: uppercase;
+          font-family: "Permanent Marker";
+          letter-spacing: 2px;
+        }
         .left{
           float: left;
+          .headline{
+            font-family: "Source Sans Pro";
+            font-size: 25px;
+          }
         }
         .right{
           float: right;
           .headline{
-            font-size: 24px;
+            font-family: "Source Sans Pro";
+            font-size: 25px;
           }
         }
         .no-margin{
@@ -121,7 +133,8 @@
       text-align: center;
       text-transform: uppercase;
       font-size: 21px;
-      letter-spacing: 1px;
+      letter-spacing: 3px;
+      font-family: "Source Sans Pro";
       color: #677887;
     }
     .activity-list{
@@ -138,6 +151,11 @@
           text-align: center;
           text-transform: uppercase;
           margin-top: 10px;
+        }
+      }
+      li:nth-child(even){
+        img{
+          padding-left: 30px;
         }
       }
     }
@@ -174,3 +192,102 @@
     }
   }
 }
+
+.nav-up {
+  top: -40px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+  .wrapper{
+    width: 300px;
+    .navbar{
+      display: none;
+    }
+    .brief-description{
+      .background-image{
+        height: 400px;
+        .description{
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 50px;
+          .text{
+            border: none;
+            padding: 10px;
+            .left{
+              float: none;
+              width: auto;
+              margin-top: 0px;
+              h1{
+                font-size: 1em;
+                text-align: center;
+              }
+              p{
+                width: 250px;
+                margin: auto;
+                font-size: 0.8em;
+                margin-top: 20px;
+              }
+              .see-my-work{
+                margin-top: 20px;
+                text-align: center;
+              }
+            }
+            .right{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .project{
+      .wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        .information{
+          float: none;
+          padding: 10px;
+          .no-margin{
+            width: auto;
+            margin-right: 0px;
+          }
+          img{
+            width: 250px;
+          }
+          .right{
+            .headline{
+              font-size: 20px;
+              margin-left: 10px;
+            }
+            p, .what-i-did{
+              font-size: 16px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .letote{
+      .right{
+        float: none !important;
+      }
+    }
+    .activities{
+      .headline{
+        font-size: 15px;
+      }
+      .activity-list{
+        li{
+          padding: 0px;
+          img{
+            width: 50px;
+          }
+          .title{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+

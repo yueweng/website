@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <div class="navbar">
+  <div class="navbar nav-down">
     <div class="name">
       Yue Weng Mak
     </div>
@@ -8,9 +8,9 @@
         <div class="work">
           Let's work together
         </div>
-        <%= image_tag "twitter.png" %>
-        <%= image_tag "google.png" %>
-        <%= image_tag "email.png" %>
+        <%= link_to image_tag("twitter.png"), "https://twitter.com/YWMak" %>
+        <%= link_to image_tag("github.png"), "https://github.com/yueweng" %>
+        <%= link_to image_tag("email.png"), "mailto:yueweng.mak@gmail.com" %>
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@
       <div class="wrapper">
         <div class="information">
           <div class="left">
-            <%= image_tag "lumoid-homepage.png" %>
+            <%= link_to image_tag("lumoid-homepage.png"), "https://www.lumoid.com", :target => "_blank" %>
           </div>
           <div class="right desc">
             <div class="headline">
@@ -49,7 +49,7 @@
             <p>
               Develop and maintain the website. Ensure browser compatibility
             </p>
-            <div> What I did</div>
+            <div class="what-i-did"> What I did :</div>
             <p> HTML, CSS, JavaScript</p>
           </div>
         </div>
@@ -67,11 +67,11 @@
             <p>
               Develop and maintain the website. Ensure browser compatibility
             </p>
-            <div> What I did</div>
+            <div class="what-i-did"> What I did :</div>
             <p> HTML, CSS, JavaScript</p>
           </div>
           <div class="right">
-            <%= image_tag "letote-homepage.png" %>
+            <%= link_to image_tag("letote-homepage.png"), "https://www.letote.com", :target => "_blank" %>
           </div>
         </div>
       </div>
@@ -114,9 +114,9 @@
         GET IN TOUCH
       </div>
       <ul class="footer-links">
-        <li><%= image_tag "footer_twitter_2x.png" %></li>
-        <li><%= image_tag "footer_github_2x.png" %></li>
-        <li><%= image_tag "footer_email_2x.png" %></li>
+        <li><%= link_to image_tag("footer_twitter_2x.png"), "https://twitter.com/YWMak" %></li>
+        <li><%= link_to image_tag("footer_github_2x.png"), "https://github.com/yueweng" %></li>
+        <li><%= link_to image_tag("footer_email_2x.png"), "mailto:yueweng.mak@gmail.com" %></li>
       </ul>
     </div>
     <div class="copyright">&copy; <%= Time.now.year %> Yue Weng Mak</div>
