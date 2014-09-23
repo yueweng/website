@@ -5,7 +5,7 @@
   width: 1020px;
   margin: auto;
   font-family: "Source Code Pro";
-  .navbar{
+  .nav-down{
     overflow: hidden;
     height: 60px;
     .name{
@@ -28,6 +28,10 @@
           text-align: center;
           padding-top: 6px;
           font-size: 15px;
+          a{
+            color: white;
+            text-decoration: none;
+          }
         }
         img{
           margin-left: -30px;

@@ -4,10 +4,12 @@
 
 HomePage =
   initialize: ->
-    # Hide Header on on scroll down
     hasScrolled = ->
       st = $(this).scrollTop()
-
+      didScroll = undefined
+      lastScrollTop = 0
+      delta = 5
+      navbarHeight = $("header").outerHeight()
       # Make sure they scroll more than delta
       return  if Math.abs(lastScrollTop - st) <= delta
 
@@ -16,18 +18,14 @@ HomePage =
       if st > lastScrollTop and st > navbarHeight
 
         # Scroll Down
-        $(".navbar").removeClass("nav-down").addClass "nav-up"
+        $("header").removeClass("nav-down").addClass "nav-up"
       else
 
         # Scroll Up
-        $(".navbar").removeClass("nav-up").addClass "nav-down"  if st + $(window).height() < $(document).height()
+        $("header").removeClass("nav-up").addClass "nav-down"  if st + $(window).height() < $(document).height()
       lastScrollTop = st
       return
 
-    didScroll = undefined
-    lastScrollTop = 0
-    delta = 5
-    navbarHeight = $(".navbar").outerHeight()
     $(window).scroll (event) ->
       didScroll = true
       return
